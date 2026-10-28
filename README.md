@@ -80,6 +80,24 @@ ASSUMPTIONS.md           Assumptions and design decisions
 
 ## Setup
 
+
+### Windows setup
+
+If you're using Windows, create your environment file with the appropriate command.
+
+**Command Prompt:**
+```cmd
+copy .env.example .env
+```
+
+**PowerShell:**
+```powershell
+Copy-Item .env.example .env
+```
+
+Then edit `.env` with your database connection details before running migrations.
+
+
 Requires Node.js >= 20.12 and a PostgreSQL 13+ database. You do **not** need PostgreSQL installed
 locally: a free Supabase project works.
 
